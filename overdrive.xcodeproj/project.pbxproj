@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12B756BC142D76F800F83A60 /* descriptors.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B756BA142D76F800F83A60 /* descriptors.h */; };
+		12B756BD142D76F800F83A60 /* descriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B756BB142D76F800F83A60 /* descriptors.m */; };
+		CF7425551409A2E7003F1922 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7425541409A2E7003F1922 /* Foundation.framework */; };
+		CF85DBCE1409B2CB0033F00B /* hooks.h in Headers */ = {isa = PBXBuildFile; fileRef = CF85DBCC1409B2CB0033F00B /* hooks.h */; };
+		CF85DBCF1409B2CB0033F00B /* hooks.m in Sources */ = {isa = PBXBuildFile; fileRef = CF85DBCD1409B2CB0033F00B /* hooks.m */; };
+		CFFB17AA1409A6C000A451B0 /* interpose.c in Sources */ = {isa = PBXBuildFile; fileRef = CFFB17A61409A6C000A451B0 /* interpose.c */; };
+		CFFB17AB1409A6C000A451B0 /* interpose.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFB17A71409A6C000A451B0 /* interpose.h */; };
+		CFFB17AC1409A6C000A451B0 /* overdrive.c in Sources */ = {isa = PBXBuildFile; fileRef = CFFB17A81409A6C000A451B0 /* overdrive.c */; };
+		CFFB17AD1409A6C000A451B0 /* overdrive.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFB17A91409A6C000A451B0 /* overdrive.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12B756BA142D76F800F83A60 /* descriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptors.h; sourceTree = "<group>"; };
+		12B756BB142D76F800F83A60 /* descriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = descriptors.m; sourceTree = "<group>"; };
+		CF7425511409A2E7003F1922 /* overdrive.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = overdrive.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7425541409A2E7003F1922 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF7425581409A2E7003F1922 /* overdrive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "overdrive-Prefix.pch"; sourceTree = "<group>"; };
+		CF85DBCC1409B2CB0033F00B /* hooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hooks.h; sourceTree = "<group>"; };
+		CF85DBCD1409B2CB0033F00B /* hooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hooks.m; sourceTree = "<group>"; };
+		CFFB17A61409A6C000A451B0 /* interpose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = interpose.c; sourceTree = "<group>"; };
+		CFFB17A71409A6C000A451B0 /* interpose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interpose.h; sourceTree = "<group>"; };
+		CFFB17A81409A6C000A451B0 /* overdrive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = overdrive.c; sourceTree = "<group>"; };
+		CFFB17A91409A6C000A451B0 /* overdrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overdrive.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF74254E1409A2E7003F1922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7425551409A2E7003F1922 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF7425461409A2E7003F1922 = {
+			isa = PBXGroup;
+			children = (
+				CF7425561409A2E7003F1922 /* overdrive */,
+				CF7425531409A2E7003F1922 /* Frameworks */,
+				CF7425521409A2E7003F1922 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF7425521409A2E7003F1922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF7425511409A2E7003F1922 /* overdrive.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF7425531409A2E7003F1922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7425541409A2E7003F1922 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF7425561409A2E7003F1922 /* overdrive */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB17A61409A6C000A451B0 /* interpose.c */,
+				CFFB17A71409A6C000A451B0 /* interpose.h */,
+				CFFB17A91409A6C000A451B0 /* overdrive.h */,
+				CFFB17A81409A6C000A451B0 /* overdrive.c */,
+				CF85DBCC1409B2CB0033F00B /* hooks.h */,
+				CF85DBCD1409B2CB0033F00B /* hooks.m */,
+				12B756BA142D76F800F83A60 /* descriptors.h */,
+				12B756BB142D76F800F83A60 /* descriptors.m */,
+				CF7425571409A2E7003F1922 /* Supporting Files */,
+			);
+			path = overdrive;
+			sourceTree = "<group>";
+		};
+		CF7425571409A2E7003F1922 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF7425581409A2E7003F1922 /* overdrive-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF74254F1409A2E7003F1922 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFB17AB1409A6C000A451B0 /* interpose.h in Headers */,
+				CFFB17AD1409A6C000A451B0 /* overdrive.h in Headers */,
+				CF85DBCE1409B2CB0033F00B /* hooks.h in Headers */,
+				12B756BC142D76F800F83A60 /* descriptors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF7425501409A2E7003F1922 /* overdrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF74255E1409A2E7003F1922 /* Build configuration list for PBXNativeTarget "overdrive" */;
+			buildPhases = (
+				CF74254D1409A2E7003F1922 /* Sources */,
+				CF74254E1409A2E7003F1922 /* Frameworks */,
+				CF74254F1409A2E7003F1922 /* Headers */,
+				41A24C131409CD7A002DE536 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = overdrive;
+			productName = overdrive;
+			productReference = CF7425511409A2E7003F1922 /* overdrive.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF7425481409A2E7003F1922 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CF74254B1409A2E7003F1922 /* Build configuration list for PBXProject "overdrive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF7425461409A2E7003F1922;
+			productRefGroup = CF7425521409A2E7003F1922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF7425501409A2E7003F1922 /* overdrive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41A24C131409CD7A002DE536 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Developer/entitlements/gen_entitlements.py \"us.hackulo.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/overdrive.dylib\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF74254D1409A2E7003F1922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFB17AA1409A6C000A451B0 /* interpose.c in Sources */,
+				CFFB17AC1409A6C000A451B0 /* overdrive.c in Sources */,
+				CF85DBCF1409B2CB0033F00B /* hooks.m in Sources */,
+				12B756BD142D76F800F83A60 /* descriptors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF74255C1409A2E7003F1922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF74255D1409A2E7003F1922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF74255F1409A2E7003F1922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/overdrive.dst;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = 2;
+				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "overdrive/overdrive-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "@executable_path";
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.3;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF7425601409A2E7003F1922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/overdrive.dst;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = 2;
+				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "overdrive/overdrive-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "@executable_path";
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.3;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF74254B1409A2E7003F1922 /* Build configuration list for PBXProject "overdrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF74255C1409A2E7003F1922 /* Debug */,
+				CF74255D1409A2E7003F1922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF74255E1409A2E7003F1922 /* Build configuration list for PBXNativeTarget "overdrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF74255F1409A2E7003F1922 /* Debug */,
+				CF7425601409A2E7003F1922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF7425481409A2E7003F1922 /* Project object */;
+}
